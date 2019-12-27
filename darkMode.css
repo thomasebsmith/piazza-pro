@@ -10,8 +10,8 @@
   --dark-blue-fg: #22bbff;
   --dark-blue-bg: #2288dd;
   --dark-darkblue-bg: #2266aa;
-  --dark-red-fg: #dd3333;
-  --dark-red-bg: #bb3333;
+  --dark-red-fg: #cc3333;
+  --dark-red-bg: #422222;
   --dark-black-bg: #111111;
 }
 
@@ -178,7 +178,7 @@
 }
 
 .unresolved > .resolve_unresolve_actions {
-  background: var(--dark-red-bg) !important;
+  background: var(--dark-red-fg) !important;
 }
 
 .resolve_unresolve_actions {
@@ -206,19 +206,29 @@
 /* Sidebar feed */
 .feed_item {
   background: var(--dark-bg) !important;
-  border-bottom-color: var(--dark-med) !important;
+  border-color: var(--dark-med) !important;
+  box-shadow: none !important;
+}
+.feed_item.unanswered {
+  background: var(--dark-red-bg) !important;
 }
 .feed_item.selected {
   background: var(--dark-black-bg) !important;
 }
 .feed_item > .metadata > .timestamp {
   color: var(--dark-fg) !important;
+  text-shadow: none !important;
 }
 .feed_item > .content > .title {
   color: var(--dark-bright-fg) !important;
+  text-shadow: none !important;
+}
+.feed_item.unanswered > .content > .title {
+  color: var(--dark-red-fg) !important;
 }
 .feed_item > .content > .snippet {
   color: var(--dark-dark-fg) !important;
+  text-shadow: none !important;
 }
 .private_icon {
   background: var(--dark-light-bg) !important;
