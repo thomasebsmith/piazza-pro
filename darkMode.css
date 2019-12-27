@@ -1,0 +1,248 @@
+:root {
+  --dark-bg: #2a2a2a;
+  --dark-bright-bg: #333;
+  --dark-light-bg: #4a4a4a;
+  --dark-med-bg: #444;
+  --dark-med: #777;
+  --dark-fg: #dddddd;
+  --dark-bright-fg: #f0f0f0;
+  --dark-dark-fg: #aaaaaa;
+  --dark-blue-fg: #22bbff;
+  --dark-blue-bg: #2288dd;
+  --dark-darkblue-bg: #2266aa;
+  --dark-red-fg: #dd3333;
+  --dark-red-bg: #bb3333;
+  --dark-black-bg: #111111;
+}
+
+/* Shared */
+.views#views {
+  background: var(--dark-light-bg);
+}
+.blockOverlay {
+  background: var(--dark-light-bg) !important;
+}
+
+/* Toolbars */
+#popular_tags_bar, .dashboard_toolbar {
+  background: -webkit-linear-gradient(
+    top,
+    var(--dark-light-bg) 0%,
+    var(--dark-bg) 100%
+  ) !important;
+  box-shadow: inset 0 1px 0 var(--dark-med) !important;
+}
+
+#page_feed_filter_buttons, .question_history_slider_label {
+  color: var(--dark-fg) !important;
+  text-shadow: 0 0.5px 0 var(--dark-dark-fg) !important;
+}
+
+.page_feed_search_wrapper {
+  background: var(--dark-med-bg) !important;
+}
+
+/* Buttons and text boxes */
+.btn-primary {
+  background: -webkit-linear-gradient(
+    top,
+    var(--dark-blue-bg) 0%,
+    var(--dark-darkblue-bg) 100%
+  );
+  border: none;
+}
+.start_reply, .compose_answer, .compose_discussion, .search_bar {
+  background: var(--dark-med-bg) !important;
+  border-color: var(--dark-light-bg) !important;
+}
+#search-box {
+  background: none !important;
+  color: var(--dark-fg) !important;
+}
+.clearButton {
+  background-position-x: -13px !important;;
+}
+.hide_show_feed {
+  color: var(--dark-dark-fg) !important;
+  text-shadow: none;
+}
+
+/* Search help */
+.search_tips, .page_feed_filter_feed {
+  background: var(--dark-bg);
+  color: var(--dark-fg);
+}
+
+.search_tips table tr:nth-child(2n) {
+  background: var(--dark-light-bg);
+}
+
+.sort_results_by {
+  background: var(--dark-med);
+  color: var(--dark-dark-fg);
+  border: none;
+  box-shadow: none;
+}
+.sort_results_by.active {
+  background: var(--dark-med-bg);
+  border: none;
+  box-shadow: none;
+}
+
+/* Homescreen */
+.homescreen_section_header a {
+  color: var(--dark-blue-fg) !important;
+}
+
+.homescreen_section_header {
+  color: var(--dark-bright-fg) !important;
+  text-shadow: 1px 1px 0 var(--dark-dark-fg) !important;
+}
+
+.homescreen_section_header > i {
+  color: var(--dark-fg) !important;
+}
+
+.homescreen_box {
+  background: var(--dark-bg) !important;
+}
+
+.homescreen_box h4 {
+  color: var(--dark-dark-fg) !important;
+}
+
+.notification_text {
+  color: var(--dark-fg);
+}
+.notification_wrapper:hover {
+  background: var(--dark-med-bg) !important;
+}
+
+.download_on_app_store_popup_container {
+  background: inherit;
+  color: var(--dark-dark-fg);
+}
+
+.stat {
+  color: var(--dark-fg) !important;
+}
+
+.stat > .fixed_50, .confirmation_text {
+  color: var(--dark-bright-fg) !important;
+}
+
+/* Posts */
+.post_region_box {
+  background: var(--dark-bg);
+}
+
+.post_region_box .post_region_header {
+  border-bottom-color: var(--dark-med);
+}
+
+.post_region_title {
+  color: var(--dark-bright-fg) !important;
+}
+
+.post_title {
+  color: var(--dark-fg) !important;
+}
+
+#questionText {
+  color: var(--dark-fg);
+}
+
+#view_question_note_bar {
+  background: var(--dark-bg);
+  border-color: var(--dark-med);
+}
+
+#clarifying_discussion>.clarifying_discussion>.clarifying_discussion {
+  background: var(--dark-bright-bg) !important;
+}
+
+.post_region_text {
+  color: var(--dark-bright-fg) !important;
+}
+
+.discussion_replies, discussion_content {
+  background: var(--dark-bg) !important;
+}
+
+.discussion_replies .post_region_text {
+  color: var(--dark-fg) !important;
+}
+
+.discussion_poster>.user_name {
+  color: var(--dark-bright-fg);
+}
+
+.unresolved > .resolve_unresolve_actions {
+  background: var(--dark-red-bg) !important;
+}
+
+.resolve_unresolve_actions {
+  background: var(--dark-light-bg) !important;
+}
+
+.post_region_box .post_region_actions, #edit_question_note_bar {
+  border-top-color: var(--dark-med);
+  background: var(--dark-bg);
+}
+
+/* Dropdown menu */
+.dropdown-menu {
+  background: var(--dark-bright-bg) !important;
+}
+
+.dropdown-menu > li:hover {
+  background: var(--dark-light-bg) !important;
+}
+
+.dropdown-menu > li > a {
+  color: var(--dark-bright-fg) !important;
+}
+
+/* Sidebar feed */
+.feed_item {
+  background: var(--dark-bg) !important;
+  border-bottom-color: var(--dark-med) !important;
+}
+.feed_item.selected {
+  background: var(--dark-black-bg) !important;
+}
+.feed_item > .metadata > .timestamp {
+  color: var(--dark-fg) !important;
+}
+.feed_item > .content > .title {
+  color: var(--dark-bright-fg) !important;
+}
+.feed_item > .content > .snippet {
+  color: var(--dark-dark-fg) !important;
+}
+.private_icon {
+  background: var(--dark-light-bg) !important;
+  color: var(--dark-light-fg) !important;
+}
+.page_feed {
+  border-right-color: var(--dark-med);
+}
+.page_feed_bucket_header {
+  box-shadow: inset 0 1px 0 var(--dark-med) !important;
+  background: var(--dark-light-bg) !important;
+  border-bottom-color: var(--dark-med) !important;
+  color: var(--dark-fg) !important;
+  text-shadow: 0 1px 0 var(--dark-dark-fg) !important;
+}
+.unresolved_followups {
+  color: var(--dark-red-fg) !important;
+  text-shadow: none;
+}
+#feed {
+  background: var(--dark-bg);
+}
+#loadMoreButton {
+  background: var(--dark-med-bg);
+  border-color: var(--dark-med);
+  color: var(--dark-fg);
+}

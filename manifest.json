@@ -9,6 +9,11 @@
     {
       "matches": ["https://piazza.com/*"],
       "js": ["content.js"]
+    },
+    {
+      "matches": ["https://piazza.com/*"],
+      "css": ["darkMode.css"],
+      "run_at": "document_start"
     }
   ]
 }
