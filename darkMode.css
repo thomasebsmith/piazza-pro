@@ -111,6 +111,10 @@
   color: var(--dark-dark-fg) !important;
 }
 
+#job_status_section label {
+  color: var(--dark-fg) !important;
+}
+
 .notification_text {
   color: var(--dark-fg);
 }
