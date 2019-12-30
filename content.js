@@ -31,4 +31,27 @@
       }
     ), error, scope);
   });
+
+  const addAction = (text, action) => {
+    const actionsDropdown =
+      document.getElementById("question_note_actions_dropdown");
+    const el = document.createElement("li");
+    el.addEventListener("click", action);
+
+    const link = document.createElement("a");
+    link.textContent = text;
+    link.setAttribute("href", "#");
+    el.appendChild(link);
+
+    actionsDropdown.appendChild(el);
+  };
+
+  // Called whenever the post content is changed.
+  global.PEM.addListener("content", clone(() => {
+    // Add action for viewing raw post data.
+    addAction("Print Raw", () => {
+      const content = global.P.feed.content;
+      console.log(content);
+    });
+  }));
 })(window.wrappedJSObject);
