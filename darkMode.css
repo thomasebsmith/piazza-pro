@@ -148,6 +148,10 @@
   color: var(--dark-bright-fg) !important;
 }
 
+.post_region_box .post_region_content h1 {
+  color: var(--dark-bright-fg);
+}
+
 .post_title {
   color: var(--dark-fg) !important;
 }
