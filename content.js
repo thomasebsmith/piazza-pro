@@ -35,15 +35,17 @@
   const addAction = (text, action) => {
     const actionsDropdown =
       document.getElementById("question_note_actions_dropdown");
-    const el = document.createElement("li");
-    el.addEventListener("click", action);
+    if (actionsDropdown) {
+      const el = document.createElement("li");
+      el.addEventListener("click", action);
 
-    const link = document.createElement("a");
-    link.textContent = text;
-    link.setAttribute("href", "#");
-    el.appendChild(link);
+      const link = document.createElement("a");
+      link.textContent = text;
+      link.setAttribute("href", "#");
+      el.appendChild(link);
 
-    actionsDropdown.appendChild(el);
+      actionsDropdown.appendChild(el);
+    }
   };
 
   // Called whenever the post content is changed.
