@@ -62,6 +62,9 @@
         }
         if (usernameClass !== null) {
           const title = usernameClass.substring("user_name_".length);
+          if (element.hasAttribute("title")) {
+            title = element.getAttribute("title") + "|" + title;
+          }
           element.setAttribute("title", title);
         }
       }
