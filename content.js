@@ -48,8 +48,31 @@
     }
   };
 
+  const addUsernameHooks = () => {
+    const elements = document.getElementsByClassName("user_name");
+    for (const element of elements) {
+      if (element.dataset.usernameHooksAdded !== "true") {
+        element.dataset.usernameHooksAdded = "true";
+        let usernameClass = null;
+        for (const cls of element.classList.values()) {
+          if (cls.startsWith("user_name_")) {
+            usernameClass = cls;
+            break;
+          }
+        }
+        if (usernameClass !== null) {
+          const title = usernameClass.substring("user_name_".length);
+          element.setAttribute("title", title);
+        }
+      }
+    }
+  };
+  addUsernameHooks();
+
   // Called whenever the post content is changed.
   global.PEM.addListener("content", clone(() => {
+    addUsernameHooks();
+
     // Add action for viewing raw post data.
     addAction("Print Raw", () => {
       const content = global.P.feed.content;
