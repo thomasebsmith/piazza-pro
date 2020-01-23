@@ -203,7 +203,7 @@ select {
   color: var(--dark-bright-fg);
 }
 
-.unresolved > .resolve_unresolve_actions {
+.unresolved .resolve_unresolve_actions {
   background: var(--dark-red-fg) !important;
 }
 
