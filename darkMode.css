@@ -89,6 +89,24 @@
   box-shadow: none;
 }
 
+/* New Post */
+.posting_meta_section, .old_new_post {
+  background: var(--dark-bg) !important;
+  color: var(--dark-dark-fg);
+}
+
+.post_type_box.active {
+  background: var(--dark-med-bg) !important;
+  border-color: var(--dark-dark-fg) !important;
+  color: var(--dark-fg) !important;
+}
+
+select {
+  background: var(--dark-med-bg);
+  border-color: var(--dark-dark-fg);
+  color: var(--dark-fg);
+}
+
 /* Homescreen */
 .homescreen_section_header a {
   color: var(--dark-blue-fg) !important;
@@ -245,7 +263,7 @@
 .page_feed {
   border-right-color: var(--dark-med);
 }
-.page_feed_bucket_header {
+.page_feed_bucket_header, .drafts {
   box-shadow: inset 0 1px 0 var(--dark-med) !important;
   background: var(--dark-light-bg) !important;
   border-bottom-color: var(--dark-med) !important;
@@ -254,6 +272,9 @@
 }
 .unresolved_followups {
   color: var(--dark-red-fg) !important;
+  text-shadow: none;
+}
+.messages {
   text-shadow: none;
 }
 #feed {
