@@ -17,6 +17,7 @@
 
 body {
   background: var(--dark-bg) !important;
+  color: var(--dark-med);
 }
 
 /* Shared */
@@ -25,6 +26,26 @@ body {
 }
 .blockOverlay {
   background: var(--dark-light-bg) !important;
+}
+
+/* Tables */
+table td, table th {
+  color: var(--dark-fg);
+  text-shadow: none;
+}
+
+.table-striped thead th {
+  background: var(--dark-med);
+}
+
+.table-striped tbody tr:nth-child(2n+1) td,
+.table-striped tbody tr:nth-child(2n+1) th {
+  background: var(--dark-bg);
+}
+
+.table-striped tbody tr:nth-child(2n) td,
+.table-striped tbody tr:nth-child(2n) th {
+  background: var(--dark-med-bg);
 }
 
 /* Toolbars */
