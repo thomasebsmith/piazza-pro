@@ -337,3 +337,36 @@ select {
   border-color: var(--dark-med);
   color: var(--dark-fg);
 }
+
+/* Statistics Page */
+#statistics_panel .post_region_box {
+  background: var(--dark-bg);
+  color: var(--dark-fg);
+}
+
+#statistics_panel #chartsRegion h2 {
+  background: var(--dark-bg);
+}
+
+#statistics_panel #chartsRegion .content {
+  background: var(--dark-bg);
+}
+
+#statistics_panel .post_region_box svg rect {
+  fill: var(--dark-med-bg);
+}
+#statistics_panel .post_region_box svg text {
+  fill: var(--dark-fg);
+}
+
+#statistics_panel .sidebar h2, #statistics_panel #topQuestionsRegion h2 {
+  background: var(--dark-bright-bg);
+}
+
+#statistics_panel .sidebar .content, #statistics_panel #topQuestionsRegion .content {
+  background: var(--dark-bright-bg);
+}
+
+#statistics_panel .value {
+  color: var(--dark-fg);
+}
