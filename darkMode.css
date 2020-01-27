@@ -48,6 +48,20 @@ table td, table th {
   background: var(--dark-med-bg);
 }
 
+
+table.tablesorter tbody tr {
+  background: var(--dark-bg);
+}
+
+.table-hover tbody tr:hover td,
+.table-hover tbody tr:hover th {
+  background: var(--dark-med);
+}
+
+table.tablesorter tbody tr td {
+  color: var(--dark-fg);
+}
+
 /* Toolbars */
 #popular_tags_bar, .dashboard_toolbar {
   background: -webkit-linear-gradient(
@@ -363,10 +377,27 @@ select {
   background: var(--dark-bright-bg);
 }
 
-#statistics_panel .sidebar .content, #statistics_panel #topQuestionsRegion .content {
+#statistics_panel .sidebar .content,
+#statistics_panel #topQuestionsRegion .content {
   background: var(--dark-bright-bg);
 }
 
 #statistics_panel .value {
   color: var(--dark-fg);
+}
+
+#statistics_panel #topParticipantsRegion h2 {
+  background: var(--dark-bright-bg);
+}
+
+#statistics_panel #topParticipantsRegion .content {
+  background: var(--dark-bright-bg);
+}
+
+#statistics_panel #topParticipantsRegion h2 {
+  background: var(--dark-bright-bg);
+}
+
+#statistics_panel #topParticipantsRegion .content {
+  background: var(--dark-bright-bg);
 }
