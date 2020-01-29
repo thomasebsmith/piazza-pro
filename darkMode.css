@@ -28,6 +28,12 @@ body {
   background: var(--dark-light-bg) !important;
 }
 
+.navbar .nav > .active > a,
+.navbar .nav > .active > a:hover,
+.navbar .nav > .active > a:focus {
+  background: inherit;
+}
+
 /* Tables */
 table td, table th {
   color: var(--dark-fg);
