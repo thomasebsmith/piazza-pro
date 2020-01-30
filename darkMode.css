@@ -440,3 +440,12 @@ body .container .section .class_row .class_info .span4 {
 body .container .section .class_row .class_info .class_title {
   color: var(--dark-bright-fg);
 }
+
+/* Course Information */
+.well {
+  background: var(--dark-bg);
+}
+
+#Page #course_information h2 {
+  color: var(--dark-fg);
+}
