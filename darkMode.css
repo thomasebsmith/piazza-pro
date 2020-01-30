@@ -407,3 +407,36 @@ select {
 #statistics_panel #topParticipantsRegion .content {
   background: var(--dark-bright-bg);
 }
+
+/* Settings */
+body .container .section {
+  background: var(--dark-bright-bg);
+  color: var(--dark-fg);
+}
+
+body .container .section .form_row:hover {
+  background: var(--dark-med-bg);
+  border-color: var(--dark-med-fg);
+  color: var(--dark-med-fg);
+}
+
+body .container .section .form_row:hover .comment {
+  color: var(--dark-med-fg);
+}
+
+body .container .section .class_row {
+  background: var(--dark-med-bg);
+}
+
+body .container .section .class_row:hover {
+  background: var(--dark-light-bg);
+  border-color: var(--dark-med);
+}
+
+body .container .section .class_row .class_info .span4 {
+  color: var(--dark-dark-fg) !important;
+}
+
+body .container .section .class_row .class_info .class_title {
+  color: var(--dark-bright-fg);
+}
