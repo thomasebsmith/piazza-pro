@@ -448,4 +448,51 @@ body .container .section .class_row .class_info .class_title {
 
 #Page #course_information h2 {
   color: var(--dark-fg);
+
+/* Careers page */
+.make_background_grey {
+  background: var(--dark-bg);
+}
+.student_feed_section .student_feed_section_header,
+.dashboard_network_view .student_feed_section_header{
+  color: var(--dark-fg);
+}
+
+.student_feed_section .student_feed_section_subheader,
+.dashboard_network_view .student_feed_section_subheader {
+  color: var(--dark-dark-fg);
+}
+
+.event_card_list .event_card,
+.network_view .network_results .student_card_wrapper .student_card,
+.network_view .network_results .student_card_wrapper .student_card .student_info {
+  background: var(--dark-bright-bg);
+  border-color: var(--dark-med);
+  color: var(--dark-fg);
+}
+
+.student_careers_feed_container .visit_banner .button_wrapper {
+  background: none;
+}
+
+.change_view_btn {
+  background: var(--dark-med-bg) !important;
+  border-color: var(--dark-med) !important;
+  color: var(--dark-dark-fg) !important;
+}
+
+.separator_line {
+  background: var(--dark-med) !important;
+}
+
+.change_view_btn:hover {
+  background: var(--dark-med) !important;
+}
+
+.dashboard_network_view .filter_students_title {
+  color: var(--dark-fg);
+}
+
+.network_view {
+  color: var(--dark-fg);
 }
