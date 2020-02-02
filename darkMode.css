@@ -497,3 +497,12 @@ body .container .section .class_row .class_info .class_title {
 .network_view {
   color: var(--dark-fg);
 }
+
+.main_section_wrapper {
+  background: var(--dark-bg);
+  color: var(--dark-fg);
+}
+
+.careers_card_item .company_metadata .company_info > div {
+  color: var(--dark-dark-fg);
+}
