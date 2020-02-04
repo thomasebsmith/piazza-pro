@@ -514,3 +514,30 @@ body .container .section .class_row .class_info .class_title {
 .events_table tr th {
   color: var(--dark-fg) !important;
 }
+
+/* Student Profile */
+.student_item {
+  background: var(--dark-bright-bg);
+  color: var(--dark-fg);
+}
+
+.student_item:hover {
+  background: var(--dark-med-bg) !important;
+}
+
+.student_item h4 {
+  color: var(--dark-bright-fg);
+}
+
+.student_profile_header_nav_wrapper {
+  background: var(--dark-bright-bg);
+}
+
+.student_profile_header_nav_wrapper .student_profile_header_nav li > a {
+  color: var(--dark-bright-fg);
+}
+
+.student_profile_header_nav_wrapper .student_profile_header_nav li.active >
+    a:hover {
+  color: var(--dark-dark-fg);
+}
