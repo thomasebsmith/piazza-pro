@@ -506,3 +506,11 @@ body .container .section .class_row .class_info .class_title {
 .careers_card_item .company_metadata .company_info > div {
   color: var(--dark-dark-fg);
 }
+
+.events_table {
+  background: var(--dark-bg);
+}
+
+.events_table tr th {
+  color: var(--dark-fg) !important;
+}
