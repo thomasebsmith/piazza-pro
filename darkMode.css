@@ -466,7 +466,8 @@ body .container .section .class_row .class_info .class_title {
 
 .event_card_list .event_card,
 .network_view .network_results .student_card_wrapper .student_card,
-.network_view .network_results .student_card_wrapper .student_card .student_info {
+.network_view .network_results .student_card_wrapper .student_card
+    .student_info {
   background: var(--dark-bright-bg);
   border-color: var(--dark-med);
   color: var(--dark-fg);
@@ -539,5 +540,19 @@ body .container .section .class_row .class_info .class_title {
 
 .student_profile_header_nav_wrapper .student_profile_header_nav li.active >
     a:hover {
+  color: var(--dark-dark-fg);
+}
+
+#student_profile_modal .modal-content, #student_profile {
+  background: var(--dark-bg);
+}
+
+.btn-default {
+  background: var(--dark-med-bg);
+  color: var(--dark-bright-fg);
+}
+
+.btn-default:hover, .btn-default:active {
+  background: var(--dark-dark-bg);
   color: var(--dark-dark-fg);
 }
