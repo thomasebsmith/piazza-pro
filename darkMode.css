@@ -28,6 +28,11 @@ body {
   background: var(--dark-light-bg) !important;
 }
 
+textarea {
+  background: var(--dark-bg);
+  color: var(--dark-fg);
+}
+
 .navbar .nav > .active > a,
 .navbar .nav > .active > a:hover,
 .navbar .nav > .active > a:focus {
@@ -555,4 +560,14 @@ body .container .section .class_row .class_info .class_title {
 .btn-default:hover, .btn-default:active {
   background: var(--dark-dark-bg);
   color: var(--dark-dark-fg);
+}
+
+/* Modal overlays */
+.jqmWindow {
+  background: var(--dark-med-bg);
+  color: var(--dark-dark-fg);
+}
+
+.jqmWindow label {
+  color: var(--dark-med);
 }
