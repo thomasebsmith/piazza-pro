@@ -1,3 +1,4 @@
+/* Dark mode theme colors - use with property: var(name) */
 :root {
   --dark-bg: #2a2a2a;
   --dark-bright-bg: #333;
@@ -15,6 +16,7 @@
   --dark-black-bg: #111111;
 }
 
+/* Default page background/color */
 body {
   background: var(--dark-bg) !important;
   color: var(--dark-med);
