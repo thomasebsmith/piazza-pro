@@ -26,8 +26,13 @@ body {
 .views#views {
   background: var(--dark-light-bg);
 }
+
 .blockOverlay {
   background: var(--dark-light-bg) !important;
+}
+
+.popover {
+  background: var(--dark-med-bg);
 }
 
 textarea, input[type=text], input[type="password"], input[type="datetime"],
