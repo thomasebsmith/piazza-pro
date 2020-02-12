@@ -467,6 +467,15 @@ body .container .section .class_row .class_info .class_title {
 }
 
 /* Careers page */
+.student_topbar .searchbar_wrapper {
+  background: var(--dark-bg);
+}
+
+.profile_content {
+  background: var(--dark-bright-bg);
+  color: var(--dark-fg);
+}
+
 .make_background_grey {
   background: var(--dark-bg);
 }
