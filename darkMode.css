@@ -591,3 +591,66 @@ body .container .section .class_row .class_info .class_title {
 .jqmWindow label {
   color: var(--dark-med);
 }
+
+/* Company messaging */
+.chat_container .chat_message .message_date_sent {
+  border-color: var(--dark-med);
+}
+
+.chat_container .chat_message .message_date_sent h6 {
+  background: var(--dark-med);
+}
+
+.chat_container .chat_header {
+  background: var(--dark-bg);
+  border-color: var(--dark-med);
+}
+
+.chat_container .chat_body {
+  background: var(--dark-bg);
+  border-color: var(--dark-med);
+}
+
+.force_css_msg span, .force_css_msg div, .force_css_msg p, .force_css_msg h1, .force_css_msg h2, .force_css_msg h3, .force_css_msg h4 {
+  background: var(--dark-bg) !important;
+  color: var(--dark-fg) !important;
+}
+
+.chat_container .chat_message .company_block_message {
+  background: var(--dark-bg);
+}
+
+.messaging_feed_section_wrapper .message_container .message_list .message_feed_message_wrapper .message {
+  background: var(--dark-bg);
+  border-color: var(--dark-med);
+}
+
+.messaging_feed_section_wrapper .message_container .message_list .message_feed_message_wrapper .message.viewed {
+  background: var(--dark-bg);
+}
+
+.messaging_feed_section_wrapper .message_container .message_list .message_feed_message_wrapper .message.selected {
+  background: var(--dark-black-bg);
+}
+
+.messaging_feed_section_wrapper {
+  border-color: var(--dark-med);
+}
+
+.add_border_left_student {
+  border-color: var(--dark-med);
+}
+
+.student_num_messages_style {
+  color: var(--dark-bright-fg) !important;
+}
+
+.messaging_feed_section_wrapper .message_box_label_container {
+  background: var(--dark-bg);
+  border-color: var(--dark-med);
+}
+
+.messaging_feed_section_wrapper .message_box_label_container .selected_feed {
+  background: var(--dark-black-bg);
+  color: var(--dark-fg);
+}
