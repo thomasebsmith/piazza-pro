@@ -23,6 +23,10 @@ body {
 }
 
 /* Shared */
+.blue_bar, .student_topbar {
+  background: var(--dark-light-bg);
+}
+
 .views#views {
   background: var(--dark-light-bg);
 }
