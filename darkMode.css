@@ -378,6 +378,52 @@ select {
   color: var(--dark-fg);
 }
 
+/* Search for Teammates Posts */
+#teams .respond, #teams .edit_post, #teams .new_post {
+  background: var(--dark-light-bg);
+}
+
+#teams h1, #teams h2, #teams h3, #teams h4, #teams h5, #teams h6 {
+  color: var(--dark-bright-fg);
+}
+
+#teams label {
+  color: var(--dark-fg);
+}
+
+#teams .respond input, #teams .edit_post input, #teams .new_post input,
+#teams input, #teams textarea {
+  color: var(--dark-fg);
+}
+
+#teams #post-table .header {
+  background: var(--dark-light-bg);
+}
+
+#teams #post-table .header #col_num_stud {
+  border-color: var(--dark-med);
+}
+
+#teams #post-table tr {
+  border-color: var(--dark-med);
+}
+
+#teams .btn {
+  background: var(--dark-light-bg);
+  color: var(--dark-fg);
+  text-shadow: none;
+}
+
+#teams .btn:hover {
+  background: var(--dark-med);
+  color: var(--dark-bright-fg);
+}
+
+#teams #post-table .info .responses .response,
+#teams #post-table .info .respond_box {
+  background: var(--dark-light-bg);
+}
+
 /* Statistics Page */
 #statistics_panel .post_region_box {
   background: var(--dark-bg);
