@@ -39,6 +39,25 @@ body {
   background: var(--dark-med-bg);
 }
 
+.modal, .modal-footer, .modal-header {
+  background: var(--dark-bg);
+  border-color: var(--dark-bright-bg);
+  box-shadow: none;
+  color: var(--dark-dark-fg);
+}
+
+.btn {
+  background: var(--dark-med-bg);
+  border-color: var(--dark-bg);
+  color: var(--dark-fg);
+  text-shadow: none;
+}
+
+.btn:hover {
+  background: var(--dark-light-bg);
+  color: var(--dark-bright-fg);
+}
+
 textarea, input[type=text], input[type="password"], input[type="datetime"],
 input[type="datetime-local"], input[type="date"], input[type="month"],
 input[type="time"], input[type="week"], input[type="number"],
