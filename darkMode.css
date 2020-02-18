@@ -126,6 +126,20 @@ table.tablesorter tbody tr td {
   background: var(--dark-med-bg) !important;
 }
 
+#special_mentions, #special_mentions h3 {
+  text-shadow: none;
+}
+
+#special_mentions h3 {
+  color: var(--dark-dark-fg);
+}
+
+#special_mentions .stats_item .content {
+  background: var(--dark-black-bg);
+  box-shadow: none;
+  color: var(--dark-fg);
+}
+
 /* Buttons and text boxes */
 .btn-primary {
   background: -webkit-linear-gradient(
