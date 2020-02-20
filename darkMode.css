@@ -540,6 +540,10 @@ body .container .section .class_row .class_info .class_title {
   color: var(--dark-bright-fg);
 }
 
+.dropdown-toggle {
+  background: var(--dark-bg) !important;
+}
+
 /* Course Information */
 .well {
   background: var(--dark-bg);
