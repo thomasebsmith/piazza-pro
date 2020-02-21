@@ -540,7 +540,7 @@ body .container .section .class_row .class_info .class_title {
   color: var(--dark-bright-fg);
 }
 
-.dropdown-toggle {
+.color-picker > .dropdown-toggle {
   background: var(--dark-bg) !important;
 }
 
