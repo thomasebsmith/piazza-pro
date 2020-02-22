@@ -566,6 +566,9 @@ body .container .section .class_row .class_info .class_title {
 .make_background_grey {
   background: var(--dark-bg);
 }
+.events_navigation_wrapper h3 {
+  color: var(--dark-fg);
+}
 .student_feed_section .student_feed_section_header,
 .dashboard_network_view .student_feed_section_header{
   color: var(--dark-fg);
