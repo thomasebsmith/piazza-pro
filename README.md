@@ -8,6 +8,11 @@ Piazza Pro currently includes:
  - View raw post data (including user IDs of people who clicked "Thanks" or
    "Good Note")
 
+## Future Features
+Piazza Pro may include in the future:
+ - View names of people who clicked "Thanks" or "Good Note" directly
+ - Better visualization of post data without looking at it raw
+
 ## Disclaimer
 Piazza Pro is not endorsed by or affiliated with Piazza Technologies in any
 way. Piazza Pro may modify, break, or otherwise disrupt certain features of
