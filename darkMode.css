@@ -701,7 +701,8 @@ body .container .section .class_row .class_info .class_title {
   border-color: var(--dark-med);
 }
 
-.force_css_msg span, .force_css_msg div, .force_css_msg p, .force_css_msg h1, .force_css_msg h2, .force_css_msg h3, .force_css_msg h4 {
+.force_css_msg span, .force_css_msg div, .force_css_msg p, .force_css_msg h1,
+.force_css_msg h2, .force_css_msg h3, .force_css_msg h4 {
   background: var(--dark-bg) !important;
   color: var(--dark-fg) !important;
 }
@@ -710,16 +711,19 @@ body .container .section .class_row .class_info .class_title {
   background: var(--dark-bg);
 }
 
-.messaging_feed_section_wrapper .message_container .message_list .message_feed_message_wrapper .message {
+.messaging_feed_section_wrapper .message_container .message_list
+.message_feed_message_wrapper .message {
   background: var(--dark-bg);
   border-color: var(--dark-med);
 }
 
-.messaging_feed_section_wrapper .message_container .message_list .message_feed_message_wrapper .message.viewed {
+.messaging_feed_section_wrapper .message_container .message_list
+.message_feed_message_wrapper .message.viewed {
   background: var(--dark-bg);
 }
 
-.messaging_feed_section_wrapper .message_container .message_list .message_feed_message_wrapper .message.selected {
+.messaging_feed_section_wrapper .message_container .message_list
+.message_feed_message_wrapper .message.selected {
   background: var(--dark-black-bg);
 }
 
@@ -742,5 +746,55 @@ body .container .section .class_row .class_info .class_title {
 
 .messaging_feed_section_wrapper .message_box_label_container .selected_feed {
   background: var(--dark-black-bg);
+  color: var(--dark-fg);
+}
+
+/* Landing page */
+.splash_panel.product_brief .online_classes_section .box {
+  background: var(--dark-bright-bg);
+  border-color: var(--dark-light-bg);
+  color: var(--dark-bright-fg);
+}
+
+body.new_splash {
+  color: var(--dark-dark-fg);
+}
+
+.new_splash h1 {
+  color: var(--dark-fg);
+}
+
+.new_splash .splash_panel h2 {
+  color: var(--dark-fg);
+}
+
+.new_splash .navbar {
+  background: var(--dark-med-bg);
+}
+
+.new_splash .navbar .nav li a:hover, .new_splash .navbar .nav li a:focus {
+  background: var(--dark-bright-bg);
+}
+
+.new_splash .navbar .navbar-right .btn-default,
+.new_splash .navbar .navbar-right-no-float .btn-default {
+  background: var(--dark-bright-bg);
+  border-color: var(--dark-blue-bg);
+  color: var(--dark-blue-fg);
+}
+
+.new_splash .splash_panel.alt_panel {
+  background: var(--dark-bg);
+}
+
+.new_splash .profs_panel .thumbnail:hover {
+  background: var(--dark-med-bg);
+}
+
+.thumbnail .caption {
+  color: var(--dark-dark-fg);
+}
+
+.new_splash .footer ul li:hover a {
   color: var(--dark-fg);
 }
