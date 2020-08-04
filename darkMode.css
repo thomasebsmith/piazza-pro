@@ -798,3 +798,16 @@ body.new_splash {
 .new_splash .footer ul li:hover a {
   color: var(--dark-fg);
 }
+
+/* "Verify your status" page */
+.terms_modal h3.terms_modal_section_heading.bold_heading {
+  color: var(--dark-fg);
+}
+
+.terms_modal .terms_modal_section_content {
+  color: var(--dark-med);
+}
+
+.terms_modal .privacy_terms_modal_footer {
+  background: var(--dark-bg) !important;
+}
