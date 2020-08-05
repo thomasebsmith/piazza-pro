@@ -554,8 +554,31 @@ body .container .section .class_row .class_info .class_title {
 }
 
 /* Careers page */
+.tip_content {
+  color: var(--dark-bg);
+}
+
+.filters_info_header {
+  background: var(--dark-bright-bg);
+  color: var(--dark-fg);
+}
+
+.main_section_wrapper .student_careers_header .filters_info_header
+.filter_info {
+  background: inherit;
+}
+
+.main_section_wrapper .student_careers_header .filters_info_header .filter_info
+.selected_filters .selected_filter_name {
+  color: var(--dark-bright-fg);
+}
+
 .student_topbar .searchbar_wrapper {
   background: var(--dark-bg);
+}
+
+.student_topbar .searchbar_wrapper .searchbar_input input[type="text"] {
+  color: var(--dark-bright-fg);
 }
 
 .profile_content {
@@ -659,6 +682,14 @@ body .container .section .class_row .class_info .class_title {
 }
 
 #student_profile_modal .modal-content, #student_profile {
+  background: var(--dark-bg);
+}
+
+#student_profile_modal .student_item.edit_mode, #student_profile .student_item.edit_mode {
+  background: var(--dark-light-bg);
+}
+
+div[modal-window] .modal-content {
   background: var(--dark-bg);
 }
 
