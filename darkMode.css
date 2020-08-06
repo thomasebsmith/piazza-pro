@@ -685,7 +685,8 @@ body .container .section .class_row .class_info .class_title {
   background: var(--dark-bg);
 }
 
-#student_profile_modal .student_item.edit_mode, #student_profile .student_item.edit_mode {
+#student_profile_modal .student_item.edit_mode, #student_profile
+.student_item.edit_mode {
   background: var(--dark-light-bg);
 }
 
@@ -841,4 +842,107 @@ body.new_splash {
 
 .terms_modal .privacy_terms_modal_footer {
   background: var(--dark-bg) !important;
+}
+
+/* Piazza Report page */
+h1, h2, h3, h4 {
+  color: var(--dark-fg)
+}
+
+.mainStats .image, #ClassReport .divider,
+#ClassReport .summaryWithImage.childSummary .imageContainer,
+#ClassReport #SideColumn .summaryWithImage .image,
+#ClassReport #SideColumn #PiazzaLogo {
+  filter: invert(95%) brightness(350%);
+}
+
+#ClassReport .summaryWithImage.childSummary .imageContainer .image {
+  filter: brightness(28.57%) invert(95%);
+}
+
+.UIModalWindow .content {
+  background: var(--dark-bg);
+}
+
+#UIModalWindow_ShareEmail {
+  background: var(--dark-bg) !important;
+}
+
+#UIModalWindow_ShareEmail input,
+#UIModalWindow_ShareEmail textarea {
+  color: var(--dark-med);
+  border-color: var(--dark-dark-bg);
+}
+#UIModalWindow_ShareEmail .content_section p {
+  color: var(--dark-med);
+}
+#UIModalWindow_ShareEmail .share_email_button_section .share_email_button {
+  background: var(--dark-med);
+  color: var(--dark-fg);
+}
+#UIModalWindow_ShareEmail .share_email_button_section .share_email_link {
+  color: var(--dark-med);
+}
+#ClassReport {
+  background: var(--dark-bg);
+}
+#ClassReport .column h2 {
+  color: var(--dark-fg);
+}
+#ClassReport .column h2 span {
+  background-color: var(--dark-med);
+}
+#ClassReport .header .subtitle {
+  color: var(--dark-light-fg);
+}
+#ClassReport .header .titleTerm,
+#ClassReport .header .titleSchool,
+#ClassReport .header .termDivider {
+  color: var(--dark-fg);
+}
+#ClassReport #SideColumn .summaryWithImage .imageContainer .viewCountContainer {
+  background: var(--dark-blue-bg);
+  color: var(--dark-fg);
+}
+#ClassReport #SideColumn .summaryWithImage .summaryContainer .questionSnippet {
+  color: var(--dark-fg);
+}
+#ClassReport #SideColumn .summaryWithImage .summaryContainer
+.questionStatisticContainer {
+  background: var(--dark-med-bg);
+  border-left-color: var(--dark-med);
+}
+#ClassReport #LeftColumn #ClassParticipationGraph {
+  border-color: var(--dark-med);
+}
+#ClassReport #LeftColumn #ClassParticipationGraph .fill {
+  background: var(--dark-blue-fg);
+}
+#ClassReport #LeftColumn #ClassParticipationGraph .label {
+  color: var(--dark-fg);
+}
+#ClassReport #LeftColumn #ClassParticipationGraph.lessThan50Percent .label {
+  color: var(--dark-red-fg);
+}
+#ClassReport .shareLinksDiv {
+  border-color: var(--dark-blue-bg);
+}
+#ClassReport .shareLinksDiv h3 {
+  background-color: var(--dark-blue-bg);
+  color: var(--dark-fg);
+}
+#ClassReport .shareLinksDiv h4 {
+  color: var(--dark-dark-fg);
+}
+#ClassReport .shareFB {
+  background-color: var(--dark-blue-bg);
+  border-color: var(--dark-black-bg);
+}
+#ClassReport .shareLinksBtns {
+  background: var(--dark-bg);
+}
+#ClassReport .shareFB:hover,
+#ClassReport .shareEmail a:hover {
+  background-color: #F7AE2B;
+  border-color: #999;
 }
