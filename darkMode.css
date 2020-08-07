@@ -23,6 +23,12 @@ body {
 }
 
 /* Shared */
+.navbar .nav > .active > a,
+.navbar .nav > .active > a:hover,
+.navbar .nav > .active > a:focus {
+  color: var(--dark-dark-fg);
+}
+
 .blue_bar, .student_topbar {
   background: var(--dark-light-bg);
 }
@@ -847,6 +853,10 @@ body.new_splash {
 /* Piazza Report page */
 h1, h2, h3, h4 {
   color: var(--dark-fg)
+}
+
+#ClassReport > .divider {
+  margin-bottom: 50px;
 }
 
 .mainStats .image, #ClassReport .divider,
