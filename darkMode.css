@@ -560,6 +560,10 @@ body .container .section .class_row .class_info .class_title {
 }
 
 /* Careers page */
+.refer_students_container h3 {
+  color: var(--dark-bg);
+}
+
 .tip_content {
   color: var(--dark-bg);
 }
