@@ -45,11 +45,11 @@ body {
   background: var(--dark-med-bg);
 }
 
-.modal, .modal-footer, .modal-header {
-  background: var(--dark-bg);
-  border-color: var(--dark-bright-bg);
-  box-shadow: none;
-  color: var(--dark-dark-fg);
+.b2_modal.modal, .modal, .modal-footer, .modal-header {
+  background: var(--dark-bg) !important;
+  border-color: var(--dark-bright-bg) !important;
+  box-shadow: none !important;
+  color: var(--dark-dark-fg) !important;
 }
 
 .btn {
@@ -514,6 +514,10 @@ select {
 }
 
 /* Settings */
+body .container h1 {
+  color: var(--dark-fg);
+}
+
 body .container .section {
   background: var(--dark-bright-bg);
   color: var(--dark-fg);
@@ -536,6 +540,20 @@ body .container .section .class_row {
 body .container .section .class_row:hover {
   background: var(--dark-light-bg);
   border-color: var(--dark-med);
+}
+
+body .container .section .class_row:hover .email_pref_edit
+    .email_pref_edit_row .radio_row:hover,
+body .container .section .class_row:hover .email_pref_edit
+    .email_pref_edit_row.last .radio_row:hover {
+  background: var(--dark-bg);
+}
+
+body .container .section .class_row:hover .email_pref_edit
+    .email_pref_edit_row .radio_row,
+body .container .section .class_row:hover .email_pref_edit
+    .email_pref_edit_row.last .radio_row {
+  background: var(--dark-bright-bg);
 }
 
 body .container .section .class_row .class_info .span4 {
