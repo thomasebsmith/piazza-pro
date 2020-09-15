@@ -4,6 +4,7 @@
   --dark-bright-bg: #333;
   --dark-light-bg: #4a4a4a;
   --dark-med-bg: #444;
+  --dark-darkmed-bg: #5a5a5a;
   --dark-med: #777;
   --dark-fg: #dddddd;
   --dark-bright-fg: #f0f0f0;
@@ -433,6 +434,10 @@ select {
 #teams .respond input, #teams .edit_post input, #teams .new_post input,
 #teams input, #teams textarea {
   color: var(--dark-fg);
+}
+
+#teams #post-table .info .responses .response.yours {
+  background: var(--dark-darkmed-bg);
 }
 
 #teams #post-table .header {
