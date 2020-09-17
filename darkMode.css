@@ -419,6 +419,10 @@ select {
 }
 
 /* Search for Teammates Posts */
+#teams .alert {
+  background: var(--dark-med-bg);
+}
+
 #teams .respond, #teams .edit_post, #teams .new_post {
   background: var(--dark-light-bg);
 }
