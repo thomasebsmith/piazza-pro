@@ -114,6 +114,10 @@
 
   const addEndorseHooks = () => {
     const data = global.P.feed.content;
+    if (data === null) {
+      return;
+    }
+
     const goodNoteEl = document.querySelector(".post_actions_number.good_note");
 
     if (goodNoteEl !== null) {
