@@ -6,8 +6,8 @@ Piazza Pro currently includes:
  - Dark mode for Q&A, class information, class statistics, homepage,
    and career pages
  - View post history for any post (even when post history viewing is turned off)
- - View raw post data (including user IDs of people who clicked "Thanks" or
-   "Good Note")
+ - View raw post and feed data
+   (including user IDs of people who clicked "Thanks" or "Good Note")
 
 ## Future Features
 Piazza Pro may include in the future:
