@@ -32,6 +32,16 @@
     ), error, scope);
   });
 
+  const addTitle = (element, title) => {
+    if (title === undefined) {
+      return;
+    }
+    if (element.hasAttribute("title")) {
+      title = element.getAttribute("title") + "|" + title;
+    }
+    element.setAttribute("title", title);
+  };
+
   const addAction = (text, action) => {
     const actionsDropdown =
       document.getElementById("question_note_actions_dropdown");
@@ -62,19 +72,61 @@
         }
         if (usernameClass !== null) {
           const title = usernameClass.substring("user_name_".length);
-          if (element.hasAttribute("title")) {
-            title = element.getAttribute("title") + "|" + title;
-          }
-          element.setAttribute("title", title);
+          addTitle(element, title);
         }
       }
     }
   };
   addUsernameHooks();
 
+  const addEndorseHooksChildren = (data) => {
+    for (const child of data.children) {
+      let users = null;
+      let element = null;
+      switch (child.type) {
+        case "s_answer":
+          users = child.tag_endorse;
+          element = document.querySelector(
+            "#s_answer > .post_region_actions > " +
+            ".post_actions_number.good_answer"
+          );
+          break;
+        case "i_answer":
+          users = child.tag_endorse;
+          element = document.querySelector(
+            "#i_answer > .post_region_actions > " +
+            ".post_actions_number.good_answer"
+          );
+          break;
+        default:
+          users = child.tag_good;
+          element = document.getElementById(child.id).querySelector(
+            ".followup_actions > .number"
+          );
+      }
+      if (users !== null && element !== null) {
+        const title = users.map(clone(user => user.name)).join(", ");
+        addTitle(element, title);
+      }
+      addEndorseHooksChildren(child);
+    }
+  };
+
+  const addEndorseHooks = () => {
+    const data = global.P.feed.content;
+    const goodNoteEl = document.querySelector(".post_actions_number.good_note");
+
+    if (goodNoteEl !== null) {
+      const title = data.tag_good.map(clone(user => user.name)).join(", ");
+      addTitle(goodNoteEl, title);
+    }
+    addEndorseHooksChildren(data);
+  };
+
   // Called whenever the post content is changed.
   global.PEM.addListener("content", clone(() => {
     addUsernameHooks();
+    addEndorseHooks();
 
     // Add action for viewing raw post data.
     addAction("Print Raw", () => {

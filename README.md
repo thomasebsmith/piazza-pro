@@ -7,11 +7,10 @@ Piazza Pro currently includes:
    and career pages
  - View post history for any post (even when post history viewing is turned off)
  - View raw post and feed data
-   (including user IDs of people who clicked "Thanks" or "Good Note")
+ - View names of people who clicked "Thanks", "Good Note", "Helpful!", etc.
 
 ## Future Features
 Piazza Pro may include in the future:
- - View names of people who clicked "Thanks" or "Good Note" directly
  - Better visualization of post data without looking at it raw
 
 ## Disclaimer
