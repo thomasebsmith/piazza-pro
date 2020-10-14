@@ -32,6 +32,8 @@
     ), error, scope);
   });
 
+  // Adds a title attribute with value `title` to `element`, or appends to
+  // `element`'s title attribute if it already exists.
   const addTitle = (element, title) => {
     if (title === undefined) {
       return;
@@ -42,6 +44,7 @@
     element.setAttribute("title", title);
   };
 
+  // Adds an action to the main dropdown for a question or note.
   const addAction = (text, action) => {
     const actionsDropdown =
       document.getElementById("question_note_actions_dropdown");
@@ -58,6 +61,7 @@
     }
   };
 
+  // Adds the user ID tooltip when hovering over a username.
   const addUsernameHooks = () => {
     const elements = document.getElementsByClassName("user_name");
     for (const element of elements) {
@@ -79,6 +83,7 @@
   };
   addUsernameHooks();
 
+  // Helper function for addEndorseHooks.
   const addEndorseHooksChildren = (data) => {
     for (const child of data.children) {
       let users = null;
@@ -112,6 +117,8 @@
     }
   };
 
+  // Adds the usernames tooltip when hovering over the number of people
+  // who have reacted to a message (thanks, helpful, good note, etc.).
   const addEndorseHooks = () => {
     const data = global.P.feed.content;
     if (data === null) {
