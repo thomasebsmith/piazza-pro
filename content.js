@@ -4,10 +4,13 @@
 
   const noHistory = "no_history";
 
+  // Clones the given value into the webpage's context. Clones function(s)
+  //  if they are given.
   const clone = (value) => {
     return cloneInto(value, window, { cloneFunctions: true });
   };
 
+  // Performs custom modifications to post/note data.
   const modify = (result) => {
     // Remove the no_history tag, if it exists.
     if (Array.isArray(result.tags)) {
