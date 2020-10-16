@@ -142,7 +142,7 @@
     addUsernameHooks();
     addEndorseHooks();
 
-    // Add action for viewing raw post data.
+    // Add an action for viewing raw post data to the main question/note.
     addAction("Print Raw", () => {
       const content = global.P.feed.content;
       console.log(content);
