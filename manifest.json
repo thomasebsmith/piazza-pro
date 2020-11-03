@@ -2,7 +2,7 @@
   "manifest_version": 2,
   "name": "Piazza Pro",
   "author": "Thomas Smith",
-  "version": "0.1",
+  "version": "0.2",
   "description": "Adds many useful features to Piazza",
   "homepage_url": "https://github.com/thomasebsmith/piazza-pro",
   "content_scripts": [
