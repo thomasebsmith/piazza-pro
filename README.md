@@ -1,12 +1,13 @@
 # Piazza Pro
-Piazza Pro is an add-on for Firefox that adds many useful features to Piazza.
+Piazza Pro is an add-on for Firefox that adds many useful features to
+[Piazza](https://piazza.com/).
 
 ## Features
 Piazza Pro currently includes:
  - Dark mode for Q&A, class information, class statistics, homepage,
    and career pages.
  - Ability to view post history for any post
-   (even when post history viewing is turned off).
+   (even when post history viewing is turned off by instructors).
  - Ability to view raw post and feed data.
  - Ability to view names of people who clicked
   "Thanks", "Good Note", "Helpful!", etc for a note or question.
