@@ -46,7 +46,7 @@ body {
   background: var(--dark-med-bg);
 }
 
-.b2_modal.modal, .modal, .modal-footer, .modal-header {
+.b2_modal.modal, .modal, .modal-footer, .modal-header, .modal-body {
   background: var(--dark-bg) !important;
   border-color: var(--dark-bright-bg) !important;
   box-shadow: none !important;
@@ -1007,4 +1007,30 @@ h1, h2, h3, h4 {
 #ClassReport .shareEmail a:hover {
   background-color: #F7AE2B;
   border-color: #999;
+}
+
+/* Log in / Sign up */
+#side_message {
+  background: var(--dark-bg);
+}
+
+#side_message p {
+  color: var(--dark-fg);
+}
+
+#lower {
+  color: var(--dark-fg);
+}
+
+#lower .box-section {
+  background: var(--dark-bg);
+}
+
+#welcome_message p {
+  color: var(--dark-blue-bg);
+}
+
+.slidingPanel {
+  background: var(--dark-bg);
+  border-color: var(--dark-bg);
 }
