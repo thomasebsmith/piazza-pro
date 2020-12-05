@@ -2,7 +2,11 @@
   // Whether the add-on functionality should be applied.
   let enabled = true;
 
+  // Constants
   const noHistory = "no_history";
+  const mainDropdownID = "question_note_actions_dropdown";
+  const usernameClass = "user_name";
+  const usernameClassPrefix = "user_name_";
 
   // Clones the given value into the webpage's context. Clones function(s)
   //  if they are given.
@@ -50,7 +54,7 @@
   // Adds an action to the main dropdown for a question or note.
   const addAction = (text, action) => {
     const actionsDropdown =
-      document.getElementById("question_note_actions_dropdown");
+      document.getElementById(mainDropdownID);
     if (actionsDropdown) {
       const el = document.createElement("li");
       el.addEventListener("click", action);
@@ -66,19 +70,19 @@
 
   // Adds the user ID tooltip when hovering over a username.
   const addUsernameHooks = () => {
-    const elements = document.getElementsByClassName("user_name");
+    const elements = document.getElementsByClassName(usernameClass);
     for (const element of elements) {
       if (element.dataset.usernameHooksAdded !== "true") {
         element.dataset.usernameHooksAdded = "true";
         let usernameClass = null;
         for (const cls of element.classList.values()) {
-          if (cls.startsWith("user_name_")) {
+          if (cls.startsWith(usernameClassPrefix)) {
             usernameClass = cls;
             break;
           }
         }
         if (usernameClass !== null) {
-          const title = usernameClass.substring("user_name_".length);
+          const title = usernameClass.substring(usernameClassPrefix.length);
           addTitle(element, title);
         }
       }
