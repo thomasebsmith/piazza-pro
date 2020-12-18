@@ -18,7 +18,7 @@
 }
 
 /* Default page background/color */
-body {
+html, body {
   background: var(--dark-bg) !important;
   color: var(--dark-med);
 }
@@ -70,8 +70,9 @@ input[type="datetime-local"], input[type="date"], input[type="month"],
 input[type="time"], input[type="week"], input[type="number"],
 input[type="email"], input[type="url"], input[type="search"], input[type="tel"],
 input[type="color"], .uneditable-input {
-  background: var(--dark-bg);
-  color: var(--dark-fg);
+  background: var(--dark-bg) !important;
+  box-shadow: none !important;
+  color: var(--dark-fg) !important;
 }
 
 .navbar .nav > .active > a,
@@ -1033,4 +1034,17 @@ h1, h2, h3, h4 {
 .slidingPanel {
   background: var(--dark-bg);
   border-color: var(--dark-bg);
+}
+
+/* Class Setup */
+#PageOverview #lower-content .main-col {
+  background: var(--dark-med-bg);
+}
+
+#PageOverview #lower-content .main-col h4 {
+  border: none;
+}
+
+.subfolder_list .folder_entry .folder_header:hover {
+  background: var(--dark-darkmed-bg);
 }
