@@ -128,7 +128,7 @@
   // who have reacted to a message (thanks, helpful, good note, etc.).
   const addEndorseHooks = () => {
     const data = ((global.P || {}).feed || {}).content;
-    if (typeof data !== "object") {
+    if (typeof data !== "object" || data === null) {
       return;
     }
 
