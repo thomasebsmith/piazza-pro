@@ -127,8 +127,8 @@
   // Adds the usernames tooltip when hovering over the number of people
   // who have reacted to a message (thanks, helpful, good note, etc.).
   const addEndorseHooks = () => {
-    const data = global.P.feed.content;
-    if (data === null) {
+    const data = ((global.P || {}).feed || {}).content;
+    if (typeof data !== "object") {
       return;
     }
 
