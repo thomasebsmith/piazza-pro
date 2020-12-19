@@ -14,6 +14,24 @@
     return cloneInto(value, window, { cloneFunctions: true });
   };
 
+  // Clones a new versio of the given function into the webpage's context. The
+  //  new version does not throw (all errors are caught and ignored).
+  const noExceptClone = (func) => {
+    if (typeof func !== "function") {
+      throw new TypeError("Only functions can be safeClone()d");
+    }
+    const noExceptFunc = function() {
+      try {
+        return func.apply(this, arguments);
+      }
+      catch (_) {
+        // Ignore errors
+        return;
+      }
+    };
+    return clone(noExceptFunc);
+  };
+
   // Performs custom modifications to post/note data.
   const modify = (result) => {
     // Remove the no_history tag, if it exists.
@@ -28,16 +46,18 @@
   // Inject code for modifying Piazza posts.
   const PA = global.PA;
   const origCall = PA.call_pj;
-  PA.call_pj = clone((method, params, blockObject, callback, error, scope) => {
-    return origCall.call(PA, method, params, blockObject, clone(
-      (result, aid) => {
-        if (enabled) {
-          modify(result);
+  PA.call_pj = noExceptClone(
+    (method, params, blockObject, callback, error, scope) => {
+      return origCall.call(PA, method, params, blockObject, noExceptClone(
+        (result, aid) => {
+          if (enabled) {
+            modify(result);
+          }
+          callback.call(scope, result, aid);
         }
-        callback.call(scope, result, aid);
-      }
-    ), error, scope);
-  });
+      ), error, scope);
+    }
+  );
 
   // Adds a title attribute with value `title` to `element`, or appends to
   // `element`'s title attribute if it already exists.
@@ -117,7 +137,7 @@
           );
       }
       if (users !== null && element !== null) {
-        const title = users.map(clone(user => user.name)).join(", ");
+        const title = users.map(noExceptClone(user => user.name)).join(", ");
         addTitle(element, title);
       }
       addEndorseHooksChildren(child);
@@ -135,14 +155,16 @@
     const goodNoteEl = document.querySelector(".post_actions_number.good_note");
 
     if (goodNoteEl !== null) {
-      const title = data.tag_good.map(clone(user => user.name)).join(", ");
+      const title = data.tag_good.map(
+        noExceptClone(user => user.name)
+      ).join(", ");
       addTitle(goodNoteEl, title);
     }
     addEndorseHooksChildren(data);
   };
 
   // Called whenever the post content is changed.
-  global.PEM.addListener("content", clone(() => {
+  global.PEM.addListener("content", noExceptClone(() => {
     addUsernameHooks();
     addEndorseHooks();
 
