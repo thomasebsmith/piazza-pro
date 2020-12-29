@@ -349,6 +349,18 @@ select {
   background: var(--dark-bg);
 }
 
+.intro_post_menu {
+  background: var(--dark-med-bg);
+}
+
+.intro_post_menu ul > li.selected {
+  background: var(--dark-fg);
+}
+
+.intro_post_menu ul {
+ color: var(--dark-fg);
+}
+
 /* Dropdown menu */
 .dropdown-menu {
   background: var(--dark-bright-bg) !important;
@@ -420,8 +432,9 @@ select {
 }
 
 /* Search for Teammates Posts */
-#teams .alert {
+#teams .alert, #teams .profs_only {
   background: var(--dark-med-bg);
+  border-color: var(--dark-fg);
 }
 
 #teams .respond, #teams .edit_post, #teams .new_post {
