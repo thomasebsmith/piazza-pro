@@ -115,6 +115,40 @@ table.tablesorter tbody tr td {
   color: var(--dark-fg);
 }
 
+/* Join classes page */
+#lower {
+  text-shadow: none;
+}
+
+#lower h2 {
+  text-shadow: none;
+}
+
+#lower #class-header h2 {
+  color: var(--dark-fg);
+}
+
+#class_list .class.active {
+  background: var(--dark-med-bg);
+  border-color: var(--dark-med);
+}
+
+#class_list label,
+#class_list .class label.main,
+#class_list #existing-classes .class .selected .role .text,
+#class_list .class.role_chosen .selected .role .text,
+#class_list .class.active .selected .role .text {
+  color: var(--dark-dark-fg);
+}
+
+#class_list .class .selected .title {
+  color: var(--dark-fg);
+}
+
+#class_list .class .selected .access_code label {
+  color: var(--dark-red-fg);
+}
+
 /* Toolbars */
 #popular_tags_bar, .dashboard_toolbar {
   background: -webkit-linear-gradient(
