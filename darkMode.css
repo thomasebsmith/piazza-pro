@@ -234,6 +234,10 @@ footer {
   color: var(--dark-dark-fg);
 }
 
+.text-body {
+  color: var(--dark-fg) !important;
+}
+
 /* Search help */
 .search_tips, .page_feed_filter_feed {
   background: var(--dark-bg);
@@ -931,7 +935,16 @@ body.new_splash {
 
 /* Piazza Report page */
 h1, h2, h3, h4 {
-  color: var(--dark-fg)
+  color: var(--dark-fg);
+}
+
+#PageOverview h2 {
+  color: var(--dark-fg);
+}
+
+.UIMessage {
+  background: var(--dark-med-bg);
+  color: var(--dark-fg);
 }
 
 #ClassReport > .divider {
