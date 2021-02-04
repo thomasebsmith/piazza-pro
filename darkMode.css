@@ -324,6 +324,10 @@ select {
   color: var(--dark-bright-fg) !important;
 }
 
+.fixed_100 {
+  color: var(--dark-med-fg);
+}
+
 /* Posts */
 .post_region_box {
   background: var(--dark-bg);
