@@ -345,6 +345,11 @@ select {
   color: var(--dark-bright-fg);
 }
 
+.post_region_box .post_region_content .clarifying_discussion
+  .discussion_content .discussion_poster {
+  color: var(--dark-med-fg);
+}
+
 .post_title {
   color: var(--dark-fg) !important;
 }
