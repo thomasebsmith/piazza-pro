@@ -21,3 +21,7 @@ Piazza Pro may include in the future:
 Piazza Pro is not endorsed by or affiliated with Piazza Technologies in any
 way. Piazza Pro may modify, break, or otherwise disrupt certain features of
 piazza.com. Use this add-on at your own risk.
+
+## License
+Piazza Pro is licensed under the MIT License. See [LICENSE](./LICENSE) for
+details.
