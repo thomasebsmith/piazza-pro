@@ -466,6 +466,9 @@ select {
   color: var(--dark-red-fg) !important;
   text-shadow: none;
 }
+.preview_box {
+  background: var(--dark-light-bg);
+}
 .messages {
   text-shadow: none;
 }
