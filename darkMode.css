@@ -81,6 +81,10 @@ input[type="color"], .uneditable-input {
   background: inherit;
 }
 
+#primary select {
+  background-color: var(--dark-bg);
+}
+
 /* Tables */
 table td, table th {
   color: var(--dark-fg);
@@ -801,7 +805,7 @@ div[modal-window] .modal-content {
 }
 
 .btn-default:hover, .btn-default:active {
-  background: var(--dark-dark-bg);
+  background: var(--dark-bg);
   color: var(--dark-dark-fg);
 }
 
