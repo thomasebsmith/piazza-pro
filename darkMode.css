@@ -417,12 +417,16 @@ select {
   background: var(--dark-bright-bg) !important;
 }
 
-.dropdown-menu > li:hover {
-  background: var(--dark-light-bg) !important;
+.dropdown-menu .dropdown-item,
+#react_root #topbar .dropdown .dropdown-menu .dropdown-item {
+  background: var(--dark-bright-bg) !important;
+  color: var(--dark-bright-fg) !important;
 }
 
-.dropdown-menu > li > a {
-  color: var(--dark-bright-fg) !important;
+.dropdown-menu .dropdown-item:hover,
+#react_root #topbar .dropdown .dropdown-menu .dropdown-item:hover,
+#react_root #topbar #my_class_menu .dropdown-item.dark-item:hover {
+  background: var(--dark-light-bg) !important;
 }
 
 /* Sidebar feed */
